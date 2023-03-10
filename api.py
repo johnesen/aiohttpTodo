@@ -164,13 +164,7 @@ class RestResource:
             self.instance_endpoint.dispatch,
         )
 
-    # def render(self, instance):
-    #     return {}
-    #     return OrderedDict(getattr(instance))
 
     @staticmethod
     def encode(data):
         return json.dumps(data, indent=4, ensure_ascii=True).encode("utf-8")
-
-    # def render_and_encode(self, instance):
-    #     return self.encode(self.render(instance))
